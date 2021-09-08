@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Shariflabs" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Blue</item>
+        <item name="colorPrimaryVariant">@color/White</item>
+        <item name="colorOnPrimary">@color/Blue</item>
+        <item name="iconTint">@color/IconeTint</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Blue</item>
+        <item name="colorSecondaryVariant">@color/White</item>
+        <item name="colorOnSecondary">@color/Blue</item>
+
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Shariflabs2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Blue</item>
+        <item name="colorPrimaryVariant">@color/White</item>
+        <item name="colorOnPrimary">@color/Blue</item>
+        <item name="iconTint">@color/IconeTint</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Blue</item>
+        <item name="colorSecondaryVariant">@color/White</item>
+        <item name="colorOnSecondary">@color/Blue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <!--forDate.-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/Blue</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Theme.Shariflabs">
+        <item name="android:editTextColor">@color/Black</item>
+    </style>
+
+</resources>

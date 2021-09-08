@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.solutionsplayer.AboutUs.AboutUsFragment">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg">
+
+    </ImageView>
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/titlebar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include4">
+
+        <RelativeLayout
+            android:id="@+id/child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg"
+            android:paddingBottom="62dp"
+
+            >
+
+            <TextView
+                android:id="@+id/abouttextheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/child"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="About Us"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                tools:ignore="NotSibling"></TextView>
+
+
+            <TextView
+                android:id="@+id/abouttextmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abouttextheading"
+                android:gravity="left"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="18dp"
+                android:text="Sharif Labs and Diagnostics offers outstanding services in areas of Hematology, Endocrinology, Clinical Pathology, Microbiology, Molecular Biology and Histopathology with its state-of-the-art technology. Further to our diagnostic services, our respected clients enjoy our luxurious customer’s services having an easy access to the reports via online free urgent reporting, SMS reporting services and Whatsapp reporting. Addition to previously said services, we also provide “Free” home sample collection services. To enjoy our constantly evolving innovative services, stay connected with us."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/hundredpercentheading"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abouttextmaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="100% guarantee"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/hundredpercenttmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hundredpercentheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Sharif Labs and Diagnostics with latest use of technology and best human resources provide you with accurate lab tests results."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/Qualifiedteamheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hundredpercenttmaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:text="Qualified team"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Qualifiedteammaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Qualifiedteamheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="A team of highly qualified doctors and specialist, Sharif Labs and Diagnostics provides excellent facilities to the people."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/Servicewithcareheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Qualifiedteammaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:text="Service with care"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Servicewithcarematerial"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Servicewithcareheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Client with an easy access to the web, enjoyed our esteemed and luxurious customer services by getting their reports."
+                android:textColor="@color/TextColor"
+    ></TextView>
+
+
+            <TextView
+                android:id="@+id/Ourexperienceheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Servicewithcarematerial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:text="Our experience"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Ourexperiencematerial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ourexperienceheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Our technical staff are certified scientific and highly skilled with extensive experience in clinical lab."
+                android:textColor="@color/TextColor"
+               ></TextView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

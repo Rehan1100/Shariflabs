@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.solutionsplayer.LabReport.ViewReport.ViewLabReportFragment">
+
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       >
+
+
+    <RelativeLayout
+        android:id="@+id/Top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="62dp"
+        >
+        <RelativeLayout
+            android:layout_below="@id/Top"
+            android:id="@+id/header1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            tools:ignore="NotSibling">
+
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="8dp"
+            android:text="6/18/2021"
+            android:textColor="@color/Black"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:paddingRight="12dp"
+            android:text="Sharif Labs and Diagnostics -Islamabad"
+            android:textColor="@color/Black"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header1">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo"></ImageView>
+
+        <TextView
+            android:id="@+id/trackingid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/logo"
+            android:text="162255172157832"
+            android:textColor="@color/Black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/trackingid"
+            android:text="Asad"
+            android:textColor="@color/Black"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp">
+
+        <RelativeLayout
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/GenderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Gender"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/gendertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/GenderTitle"
+                android:paddingLeft="12dp"
+                android:text="Gender"
+                android:textColor="@color/Black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender">
+
+            <TextView
+                android:id="@+id/DateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Date of Birth"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/dateofbirthtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/DateTitle"
+                android:paddingLeft="12dp"
+                android:text="Gender"
+                android:textColor="@color/Black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Passport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date">
+
+            <TextView
+                android:id="@+id/PassportNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Passport No"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/passportnotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/PassportNo"
+                android:paddingLeft="12dp"
+                android:text="A-456"
+                android:textColor="@color/Black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Passport">
+
+            <TextView
+                android:id="@+id/TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Ticket/PNR No"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tickettext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/TicketNo"
+                android:paddingLeft="12dp"
+                android:text="Gender"
+                android:textColor="@color/Black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ReportDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Ticket"/>
+
+        <RelativeLayout
+            android:id="@+id/ReportTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReportDate"/>
+
+        <RelativeLayout
+            android:id="@+id/SampleDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReportTime">
+
+            <TextView
+                android:id="@+id/SampleDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Sample Time"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/sampletimetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/SampleDateTitle"
+                android:paddingLeft="12dp"
+                android:text="Gender"
+                android:textColor="@color/Black"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SampleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SampleDate">
+
+            <TextView
+                android:id="@+id/SampleTimeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Sample Date"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/sampledatetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/SampleTimeTitle"
+                android:paddingLeft="12dp"
+                android:text="Gender"
+                android:textColor="@color/Black"></TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header3">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:padding="12dp">
+
+            <TableRow
+                android:id="@+id/table_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/SNTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="S/N"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/TestTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Test Title"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/ResultTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Result"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_row1">
+
+                <TextView
+                    android:id="@+id/sntext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="S/N"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/testtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:fontFamily="serif"
+
+                    android:gravity="center_horizontal"
+                    android:text="Test Title"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/resulttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Result"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+
+                >
+
+                <TableRow
+                    android:id="@+id/table_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/table_row2">
+
+                    <TextView
+                        android:id="@+id/testdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:paddingLeft="12dp"
+                        android:text="Result"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="#000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/table_row3">
+
+                    <TextView
+                        android:id="@+id/comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:paddingLeft="12dp"
+                        android:text="Comments/Recommendations"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/table_row4">
+
+                    <TextView
+                        android:id="@+id/Recomendations"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:paddingLeft="12dp"
+                        android:textSize="10dp"
+                        android:text="1. A Negative result must be interpreted along with clinical observation, patient history and epidemiological information.\n2. A single negative result might not exclude the possibility of corona virus infection. A repeat test may be required if symptoms persist\n3. In case of positive result, it is strongly advised that patient should stay at home under self-quarantine and maintain social distancing
+along with additional testing as deemed necessary by treating physician.\n
+4. In case the patient develops shortness of breath he/she should immediately seek medical advice.
+\n5. Results of PCR studies performed in one laboratory should not be compared with those performed in another laboratory as the
+kits/methodologies used in different laboratories may not have the same sensitivity and specificity.
+"
+                        android:paddingBottom="12dp"
+                        android:textColor="@color/Black" />
+
+                </TableRow>
+
+
+            </TableLayout>
+        </TableLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table"
+            android:layout_marginLeft="18dp"
+            >
+
+            <TextView
+                android:id="@+id/verfifiedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:text="This report can be verified at :" />
+
+            <TextView
+                android:id="@+id/verfifiedDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verfifiedTitle"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header4"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/digitalreport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@color/Red"
+                android:text="This is a digitally verified Report and does not require any Signature" />
+            <TextView
+                android:id="@+id/labname"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/digitalreport"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:text="Sharif Labs and Diagnostics"
+                ></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header5"
+            android:layout_marginLeft="18dp"
+            >
+
+            <TextView
+                android:id="@+id/Drname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@color/Black"
+                android:text="Dr. Attiya Rasool Qureshi"
+                ></TextView>
+            <TextView
+                android:id="@+id/Drprofession"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/Drname"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@color/Black"
+                android:text="MBBS,M.Phil Microbiology"
+                ></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/header7"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/header6"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+
+            >
+            <TextView
+                android:id="@+id/ReportDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here to download your Report"
+                android:textColor="@color/Blue"
+                android:textStyle="bold"
+                android:clickable="false"
+                android:textSize="19dp"
+                android:fontFamily="@font/abril_fatface"
+                ></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/header8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header7"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="12dp"
+            >
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/Yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Office# 6, Ground Floor,, Feroze Centre, Fazle Haq Road, Blue Area, Islamabad +92 51 2120966-67 | 0302-5490413,0333-5537268 |\n www.shariflabs.com"
+                android:textColor="@color/TextColor"
+                android:textSize="10dp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+   </ScrollView>
+</RelativeLayout>

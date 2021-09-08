@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Blue">#025a9a</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Dullwhite">#eee</color>
+    <color name="TextColor">#686868</color>
+    <color name="IconeTint">#c5daff</color>
+    <color name="Red">#FF0000</color>
+    <color name="Yellow">#FFDA1E</color>
+
+</resources>

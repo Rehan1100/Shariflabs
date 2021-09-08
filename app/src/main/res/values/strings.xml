@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Shariflabs</string>
+    <string name="title_activity_main_page">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_Services">Services</string>
+    <string name="title_ContactUs">ContactUs</string>
+    <string name="title_labReport">Labreport</string>
+    <string name="title_testRate">TestRate</string>
+    <string name="title_testBooking">Booking</string>
+    <string name="title_AboutUs">AboutUs</string>
+    <string name="title_View_Lab_Reports">ViewLabReports</string>
+    <string name="No_Internet">No Internet</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

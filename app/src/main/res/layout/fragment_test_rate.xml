@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.solutionsplayer.TestRate.testRate">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg">
+
+    </ImageView>
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/titlebarforsearch"></include>
+
+    <RelativeLayout
+        android:id="@+id/cardSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include4"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/cardborder"
+        android:paddingLeft="12dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone">
+
+        <SearchView
+            android:id="@+id/searchtestname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:theme="@style/SearchViewStyle"
+            android:queryHint="Type Test Name"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:iconifiedByDefault="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="Type Test Name"
+            android:searchIcon="@drawable/ic_baseline_search_24"
+            android:background="@drawable/cardborder"
+            />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardSearch"
+        android:visibility="visible"
+        android:layout_marginBottom="62dp"
+        android:id="@+id/reportRecycler">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/signMSG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_below="@+id/progressBar"
+        android:textColor="@color/Blue"
+        android:text="Please wait for loading..."
+        android:visibility="gone"></TextView>
+
+    <ProgressBar
+        android:indeterminate="true"
+        android:indeterminateTint="@color/Blue"
+        android:indeterminateTintMode="src_atop"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="62dp"
+        android:layout_below="@id/reportRecycler"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:visibility="gone"></ProgressBar>
+</RelativeLayout>

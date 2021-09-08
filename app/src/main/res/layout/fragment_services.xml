@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.solutionsplayer.BottomNavigation.ui.Services.ServicesFragment">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg">
+    </ImageView>
+    <include
+        android:id="@+id/include4"
+        layout="@layout/titlebar"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include4">
+
+        <RelativeLayout
+            android:id="@+id/child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg"
+            android:paddingBottom="62dp"
+
+            >
+
+            <TextView
+                android:id="@+id/Services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/child"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:layout_marginBottom="8dp"
+                android:text="Our lab provide wide range of services in every situation to accommodate customers. Following facilities provided by us:-\nDEXA Scan\nLab Investigations\nX-Ray CR\nECG\nUltrasound/ Color Doppler\nOverseas Medical"
+                android:textColor="@color/TextColor"
+                tools:ignore="NotSibling"></TextView>
+
+            <TextView
+                android:id="@+id/SchoolHealthServiceheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Services"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="School Health Service"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Schoolhelthmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SchoolHealthServiceheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Millions of people Pakistan die every year due to Hepatitis B infection. Hepatitis B is an infection of your liver and detection of disease at early stage can help to prevent arising from it. It can cause your liver failure, cancer at later stage and can be fatal if it is not treated. Hepatitis B spread because of blood exchange, open sores, or body fluids of someone. According to health official reports, hepatitis B and C virus spreading in the country and affecting 1.45 million people."
+                android:textColor="@color/TextColor"
+                android:layout_marginBottom="8dp"
+
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/Pathologyheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Schoolhelthmaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Pathology"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Pathologyteammaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Pathologyheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="In medical science, examination of surgically removed organs, tissues, bodily fluids, and in some cases the whole body (autopsy) called Pathology. Pathologists specialized including cancer and vast majority of cancer diagnoses are made by pathologists. Microscope help to study the cellular pattern of tissue and determine if a sample is cancerous or non-cancerous (benign). Genetic studies and gene markers are also studied by Pathologists in assessment of various diseases."
+                android:textColor="@color/TextColor"
+                android:layout_marginBottom="8dp"
+
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/Radiologyheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Pathologyteammaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Radiology"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Radiologymatrial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Radiologyheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="The Radiology department at Sharif Labs and Diagnostics is flourishing and expanding academic standards. We by using state of art technology providing highest standards of care with qualified medical and technical staff. Lab has a number of X-Ray, Ultrasound, Doppler and ECG facilities."
+                android:textColor="@color/TextColor"
+                android:layout_marginBottom="8dp"
+
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/Ultrasoundheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Radiologymatrial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Ultrasound "
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Ultrasoundmateial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ultrasoundheading"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:layout_marginBottom="8dp"
+                android:text="Sound wave technology is used in ultrasound to produce pictures of inside body organs. Causes of pain, swelling and infection in the body internal organs, examination of baby in pregnant women it is most commonly used."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/ECGheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ultrasoundmateial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="ECG "
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/ecgmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ECGheading"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+
+                android:paddingLeft="18dp"
+                android:text="Heart diseases are common among the public and a big health challenge to our time.  With increased research in this field, cardiac diseases has led to new and effective treatments, offering fresh hope to many patients."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+
+
+            <TextView
+                android:id="@+id/DEXAScanheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ecgmaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="DEXAScan"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/DEXAScanmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DEXAScanheading"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+
+                android:paddingLeft="18dp"
+                android:text="Dexa scan is the most precise, fast and convenient way to determine a woman’s risk of developing osteoporosis. For thorough history and risk assessment, this also help to evaluate the measurement of height and weight."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/ColorDopplerScanheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DEXAScanmaterial"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:text="Color Doppler Scan"
+                android:textColor="@color/Black"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/ColorDopplerScanmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ColorDopplerScanheading"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:layout_marginBottom="8dp"
+
+                android:text="Dexa scan is the most precise, fast and convenient way to determine a woman’s risk of developing osteoporosis. For thorough history and risk assessment, this also help to evaluate the measurement of height and weight."
+                android:textColor="@color/TextColor"
+                ></TextView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

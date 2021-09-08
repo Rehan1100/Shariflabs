@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.solutionsplayer.BottomNavigation.ui.Home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_services"
+            app:destination="@id/navigation_services"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+
+
+            />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_contactus"
+            app:destination="@id/navigation_contactus"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_labReport"
+            app:destination="@id/navigation_labReport"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_testRate"
+            app:destination="@id/navigation_testRate"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+
+            />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_booking"
+            app:destination="@id/navigation_booking"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_AboutUs"
+            app:destination="@id/navigation_AboutUs"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_services"
+        android:name="com.solutionsplayer.BottomNavigation.ui.Services.ServicesFragment"
+        android:label="@string/title_Services"
+        tools:layout="@layout/fragment_services" >
+        <action
+            android:id="@+id/action_navigation_services_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_contactus"
+        android:name="com.solutionsplayer.BottomNavigation.ui.ContactsUs.ContactUsFragment"
+        android:label="@string/title_ContactUs"
+        tools:layout="@layout/fragment_contactus" >
+        <action
+            android:id="@+id/action_navigation_contactus_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_labReport"
+        android:label="@string/title_labReport"
+        tools:layout="@layout/fragment_lab_report"
+        android:name="com.solutionsplayer.LabReport.labReport">
+
+        <action
+            android:id="@+id/action_navigation_labReport_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_labReport_to_View_Lab_Report"
+            app:destination="@id/View_Lab_Report"
+            app:enterAnim="@anim/slide_in_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_testRate"
+        android:label="@string/title_testRate"
+        tools:layout="@layout/fragment_test_rate"
+        android:name="com.solutionsplayer.TestRate.testRate">
+        <action
+            android:id="@+id/action_navigation_testRate_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/navigation_booking"
+        android:label="@string/title_testBooking"
+        tools:layout="@layout/fragment_booking"
+        android:name="com.solutionsplayer.BookingAppointment.Booking">
+        <action
+            android:id="@+id/action_navigation_booking_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_AboutUs"
+        android:label="@string/title_AboutUs"
+        tools:layout="@layout/fragment_about_us"
+        android:name="com.solutionsplayer.AboutUs.AboutUsFragment">
+
+        <action
+            android:id="@+id/action_navigation_AboutUs_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+  <fragment
+        android:id="@+id/View_Lab_Report"
+        android:label="@string/title_View_Lab_Reports"
+        tools:layout="@layout/fragment_view_lab_report"
+        android:name="com.solutionsplayer.LabReport.ViewReport.ViewLabReportFragment">
+      <action
+          android:id="@+id/action_View_Lab_Report_to_navigation_labReport"
+          app:destination="@id/navigation_labReport"
+          app:popUpTo="@id/navigation_labReport"
+          app:enterAnim="@anim/slide_in_left"
+          app:popExitAnim="@anim/slide_in_right"
+          app:popUpToInclusive="true" />
+  </fragment>
+
+</navigation>
