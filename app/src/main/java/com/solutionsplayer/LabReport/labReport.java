@@ -63,7 +63,7 @@ public class labReport extends Fragment {
     String id;
     LabAdapter labadapter;
     public RequestQueue requestQueue;
-    public String url = "https://shariflabs.com/api/track.php";
+    public String url = "https://shariflabs.pk/api/track.php";
     public LoadingDialog loadingbar;
 
     @Override

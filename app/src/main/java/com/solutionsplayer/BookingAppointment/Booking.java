@@ -380,7 +380,7 @@ public class Booking extends Fragment {
         Navigation.findNavController(view).navigate(R.id.action_navigation_booking_to_navigation_home);
 */
         BackgroundBookingAppointment bg= new BackgroundBookingAppointment(context1,view);
-        bg.execute("https://shariflabs.com/api/setdata.php");
+        bg.execute("https://shariflabs.pk/api/setdata.php");
 
     }
 

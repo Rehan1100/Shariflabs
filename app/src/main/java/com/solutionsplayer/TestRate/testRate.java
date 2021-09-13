@@ -67,7 +67,7 @@ public class testRate extends Fragment {
     ShareefLabRepositry repositry;
     TestViewModel viewModel;
     ProgressBar progressBar;
-    public String testRateurl = "https://shariflabs.com/api/fetchtests.php";
+    public String testRateurl = "https://shariflabs.pk/api/fetchtests.php";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
