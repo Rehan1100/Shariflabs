@@ -60,6 +60,20 @@
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_airline"
+            app:destination="@id/navigation_airline"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_sampleTest"
+            app:destination="@id/navigation_sampleTest"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
 
     <fragment
@@ -161,5 +175,30 @@
           app:popExitAnim="@anim/slide_in_right"
           app:popUpToInclusive="true" />
   </fragment>
+
+    <fragment
+        android:id="@+id/navigation_airline"
+        android:name="com.solutionsplayer.AirLineCard.AirlineFragment"
+        android:label="@string/AirLine"
+        tools:layout="@layout/fragment_airline" >
+        <action
+            android:id="@+id/airlinetohome"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_sampleTest"
+        android:name="com.solutionsplayer.TestSample.TestSampleFragment"
+        android:label="@string/TestSample"
+        tools:layout="@layout/fragment_test_sample">
+        <action
+            android:id="@+id/sampletohome"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 </navigation>

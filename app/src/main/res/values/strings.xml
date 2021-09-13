@@ -9,6 +9,8 @@
     <string name="title_testBooking">Booking</string>
     <string name="title_AboutUs">AboutUs</string>
     <string name="title_View_Lab_Reports">ViewLabReports</string>
+    <string name="AirLine">Air_Lines</string>
+    <string name="TestSample">Test_Sample</string>
     <string name="No_Internet">No Internet</string>
 
     <!-- TODO: Remove or change this placeholder text -->

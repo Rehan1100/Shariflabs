@@ -41,6 +41,8 @@ public class HomeFragment extends Fragment {
         final TextView TestRate = binding.getRoot().findViewById(R.id.testRate);
         final TextView LabReport = binding.getRoot().findViewById(R.id.labReport);
         final TextView ContactUs = binding.getRoot().findViewById(R.id.contactUs);
+        final TextView airlineText = binding.getRoot().findViewById(R.id.arlineText);
+        final TextView samplecollectionText = binding.getRoot().findViewById(R.id.samplecollectionText);
         /** CardView initialize **/
         final CardView AboutCard = binding.getRoot().findViewById(R.id.aboutCard);
         final CardView serviceCard = binding.getRoot().findViewById(R.id.serviceCard);
@@ -48,6 +50,8 @@ public class HomeFragment extends Fragment {
         final CardView lapReportCard = binding.getRoot().findViewById(R.id.labCard);
         final CardView TestRateCard = binding.getRoot().findViewById(R.id.rateCard);
         final CardView contactCard = binding.getRoot().findViewById(R.id.contactCard);
+        final CardView AirlineCard = binding.getRoot().findViewById(R.id.airlinecard);
+        final CardView TestSampleCard = binding.getRoot().findViewById(R.id.sampleCollection);
         homeViewModel.getTextAboutUs().observe(getViewLifecycleOwner(), new Observer<ArrayList<String>>() {
             @Override
             public void onChanged(ArrayList<String> strings) {
@@ -57,6 +61,8 @@ public class HomeFragment extends Fragment {
                 TestRate.setText(strings.get(3));
                 LabReport.setText(strings.get(4));
                 ContactUs.setText(strings.get(5));
+                airlineText.setText(strings.get(6));
+                samplecollectionText.setText(strings.get(7));
             }
         });
 
@@ -108,6 +114,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_navigation_testRate);
+            }
+        });
+        AirlineCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_navigation_airline);
+            }
+        });
+        TestSampleCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_navigation_sampleTest);
             }
         });
 

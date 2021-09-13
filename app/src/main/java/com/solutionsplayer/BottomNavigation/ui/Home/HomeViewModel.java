@@ -19,6 +19,8 @@ public class HomeViewModel extends ViewModel {
         data2.add("Test Rate");
         data2.add("Lab Report");
         data2.add("Contact Us");
+        data2.add("Air Lines");
+        data2.add("Test Sample");
 
         data.setValue(data2);
 

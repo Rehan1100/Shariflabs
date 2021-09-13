@@ -47,7 +47,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -260,7 +260,7 @@
             app:cardBackgroundColor="@color/White"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/airlinecard"
             app:layout_constraintEnd_toStartOf="@+id/contactCard"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bookingCard">
@@ -308,7 +308,7 @@
             app:cardBackgroundColor="@color/White"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/sampleCollection"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/labCard"
             app:layout_constraintTop_toBottomOf="@+id/rateCard">
@@ -340,6 +340,103 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/airlinecard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+
+
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sampleCollection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labCard">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/airline"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/arlineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextColor"></TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sampleCollection"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/airlinecard"
+            app:layout_constraintTop_toBottomOf="@+id/contactCard">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sample"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/samplecollectionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextColor"></TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

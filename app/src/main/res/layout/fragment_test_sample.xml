@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.Shariflabs2"
+    tools:context="com.solutionsplayer.BookingAppointment.Booking">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg">
+
+    </ImageView>
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/titlebar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg"
+        android:layout_marginBottom="62dp">
+
+        <RelativeLayout
+            android:id="@+id/child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include4">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/child"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue"
+                android:background="@color/White"
+                app:hintEnabled="true"
+                android:hint="Enter Name"
+                android:textColorHint="@color/TextColor"
+                android:visibility="visible"
+                tools:ignore="NotSibling">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"
+
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filledname"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue"
+                android:background="@color/White"
+
+                android:textColorHint="@color/TextColor"
+                android:hint="Phone no">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editphoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldPassportNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fieldphone"
+                android:textColorHint="@color/TextColor"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue"
+                android:background="@color/White"
+                android:hint="Enter PassPort Number">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_passport_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldNoofPassenger"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldPassportNo"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/White"
+                android:hint="Enter Number of Passanger"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_number_of_passanger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldCnic"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldNoofPassenger"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/White"
+                android:hint="Enter Cnic Number"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_cnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldAirline"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldCnic"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/White"
+                android:hint="Airline"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_airline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldDepartureCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldAirline"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/White"
+                android:hint="DepartureCity"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_DepartureCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldArrivalCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldDepartureCity"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/White"
+                android:hint="ArrivalCity"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_ArrivalCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldTimeforSampleCollection"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldArrivalCity"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/White"
+                android:hint="Sample Collection"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_SampleCollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldAdditionalNotes"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldTimeforSampleCollection"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/White"
+                android:hint="Additional Notes"
+                android:textColorHint="@color/TextColor"
+                app:boxStrokeColor="@color/Blue"
+                app:hintTextColor="@color/Blue">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_AdditionalNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_below="@+id/fieldAdditionalNotes"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="32dp"
+                android:enabled="true"
+                android:text="Submit"
+                android:textColor="@color/White"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
