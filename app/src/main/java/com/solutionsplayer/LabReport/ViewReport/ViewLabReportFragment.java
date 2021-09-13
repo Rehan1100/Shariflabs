@@ -71,9 +71,9 @@ public class ViewLabReportFragment extends Fragment {
         Title.setText(test_name);
         Result.setText(test_result);
         Details.setText(test_details);
-        verfifiedDetails.setText("http://shariflabs.com/track/" + tracking_id+"/"+test_id);
+        verfifiedDetails.setText("http://shariflabs.pk/track/" + tracking_id+"/"+test_id);
 
-        url="http://shariflabs.com/Pdfgenerator/"+tracking_id+"/"+test_id+"";
+        url="http://shariflabs.pk/Pdfgenerator/"+tracking_id+"/"+test_id+"";
 
 
         BroadcastReceiver br = new BroadcastReceiver() {
