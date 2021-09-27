@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout-v21/fragment_airline.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/dropdownmenu.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/fragment_airline.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/fragment_booking.xml" value="0.21" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/fragment_test_rate.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/fragment_test_sample.xml" value="0.21" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/test_rate_rows.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Shariflabs/app/src/main/res/layout/titlebarforsearch.xml" value="0.20108695652173914" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -148,13 +148,46 @@ public class Booking extends Fragment {
             }
         });
         /** dropdown is here **/
+
+        //Fetch test APi Call to provide over Services
+
         data = new ArrayList<>();
         data.add(0, "Select Services");
-        data.add("Covid-19 Test");
-        data.add("Pathology");
-        data.add("Radiology");
+        data.add("SARS-CoV-2 (Covid-19) PC");
+        data.add("Complete Blood Count (CBC)");
+        data.add("ALT (SGPT)");
+        data.add("AST (SGOT)");
+        data.add("Alkaline Phosphatase (ALP)");
+        data.add("Total Bilirubin");
+        data.add("Creatinine");
+        data.add("Blood Urea");
+        data.add("Uric Acid");
+        data.add("Cholesterol Total (Fasting)");
+        data.add("Cholesterol Total (Random)");
+        data.add("HDL Cholesterol (Fasting)");
+        data.add("LDL Cholesterol (Fasting)");
+        data.add("Triglycerides (Fasting)");
+        data.add("Triglycerides (Random)");
+        data.add("HCV Quantitative");
+        data.add("HCV Qualitative");
+        data.add("HBV Quantitative");
+        data.add("HBV Qualitative");
+        data.add("Ferritin");
+        data.add("Testosterone");
+        data.add("Progesterone");
+        data.add("Beta HCG");
+        data.add("Thyroid-stimulating hormone (TSH)");
+        data.add("COVID-19 Antigen");
+        data.add("Covid-19 IgM Antibodies");
+        data.add("Covid-19 IgG Antibodies");
+        data.add("RT-PCR");
         data.add("ECG/Ultrasound");
         data.add("Dexa Scan");
+
+
+
+
+
         adapter = new ArrayAdapter(finalcontext, R.layout.dropdownmenu, data);
 
         adapter.setDropDownViewResource(R.layout.dropdownmenu);

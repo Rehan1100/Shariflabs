@@ -75,13 +75,13 @@ public class testRate extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_test_rate, container, false);
         finalcontext = (AppCompatActivity) getContext();
-        /** Setting on SignMessage Background or progressbar**/
+        /* Setting on SignMessage Background or progressbar**/
         SignMsg = view.findViewById(R.id.signMSG);
         progressBar = view.findViewById(R.id.progressBar);
-        /** Setting on Title **/
+        /* Setting on Title **/
         title = view.findViewById(R.id.Title);
         title.setText("Test Rate");
-        /** Setting backButton on Top **/
+        /* Setting backButton on Top **/
         BackButton = view.findViewById(R.id.back);
         BackButton.setOnClickListener(new View.OnClickListener() {
             @Override

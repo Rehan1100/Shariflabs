@@ -217,18 +217,18 @@
             </com.google.android.material.textfield.TextInputLayout>
 
                 <!--this is the actual edit text which takes the input-->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/submitbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:text="Submit"
-                    android:enabled="true"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="14dp"
-                    android:layout_below="@id/fieldMessage"
-                    android:textColor="@color/White" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_below="@id/fieldMessage"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="32dp"
+                android:enabled="true"
+                android:text="Submit"
+                android:textColor="@color/White"
+                android:textStyle="bold" />
 
 
 

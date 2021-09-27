@@ -6,6 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
+import com.solutionsplayer.AirLineCard.AirlineModel;
 import com.solutionsplayer.ProjectBackend.TestRateModel;
 
 import java.util.ArrayList;
@@ -22,5 +23,7 @@ public interface TestDao {
 
         @Query("DELETE FROM testRate")
         void DeleteTest();
+
+
 
 }

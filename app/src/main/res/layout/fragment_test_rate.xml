@@ -64,12 +64,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reportRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardSearch"
-        android:visibility="visible"
         android:layout_marginBottom="62dp"
-        android:id="@+id/reportRecycler">
+        android:visibility="visible">
 
     </androidx.recyclerview.widget.RecyclerView>
 
